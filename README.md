@@ -1,4 +1,5 @@
 I built a responsive User Management Dashboard using React (Vite) and TypeScript.
+Added a simple reg and login system with user friendly sweat alerts.
 This dashboard lets me search and filter users by name, email, or city, and view detailed user information along with their posts fetched from a public API. I used the Context API because is a simple and efficient state management, and this project showcases my focus on clean code, responsive design, and modern React best practices.
 
 Tech Stack:
