@@ -32,10 +32,11 @@ const App: React.FC = () => {
           />
 
           <Route path="/register" element={<Register />} />
-          <Route
-            path="/dashboard"
-            element={isLoggedIn ? <HomePage /> : <Navigate to="/" />}
-          />
+         <Route
+  path="/dashboard"
+  element={isLoggedIn ? <HomePage onLogout={handleLogout} /> : <Navigate to="/" />}
+/>
+
         </Routes>
       </Router>
     </AppProvider>
