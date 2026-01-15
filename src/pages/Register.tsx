@@ -14,7 +14,6 @@ const Register: React.FC = () => {
     e.preventDefault();
     const user = { name, email, password };
     localStorage.setItem('user', JSON.stringify(user));
-
     Swal.fire({
       icon: 'success',
       title: 'Registration Successful!',
