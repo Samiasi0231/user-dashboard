@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, MapPin, Phone, Building2 } from 'lucide-react';
-import  type { User } from '../types/index';
+import type { User } from '../types/index';
 
 interface UserCardProps {
   user: User;
@@ -11,10 +11,16 @@ export const UserCard: React.FC<UserCardProps> = ({ user, onClick }) => {
   return (
     <button
       onClick={onClick}
-      className="w-full text-left bg-white rounded-lg shadow-md hover:shadow-lg transition-all hover:scale-105 border-l-4 border-blue-500 overflow-hidden group"
+      className="w-full text-left bg-white rounded-lg shadow-md 
+                 border-l-4 border-blue-500 overflow-hidden 
+                 group transition-all transform
+                 hover:shadow-xl hover:scale-105 
+                 hover:border-blue-600 
+                 cursor-pointer"
     >
       <div className="p-4 sm:p-5">
-        <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+        <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 
+                       group-hover:text-blue-600 transition-colors">
           {user.name}
         </h3>
 
