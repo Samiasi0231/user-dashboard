@@ -15,14 +15,13 @@ const Register: React.FC = () => {
     const user = { name, email, password };
     localStorage.setItem('user', JSON.stringify(user));
 
-    // SweetAlert2 with auto-redirect to Login
     Swal.fire({
       icon: 'success',
       title: 'Registration Successful!',
       text: `Welcome, ${name}! Redirecting to login...`,
       timer: 1500,
       showConfirmButton: false,
-      willClose: () => navigate('/login'),
+      willClose: () => navigate('/'),
     });
   };
 
@@ -76,7 +75,7 @@ const Register: React.FC = () => {
 
         <p className="mt-4 text-center text-sm">
           Already have an account?{' '}
-          <Link to="/login" className="text-blue-500 hover:underline">
+          <Link to="/" className="text-blue-500 hover:underline">
             Login
           </Link>
         </p>
